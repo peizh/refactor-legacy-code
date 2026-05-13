@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactor Legacy Code"
+  short_description: "Legacy-code refactoring workflow"
+  default_prompt: "Use $refactor-legacy-code to plan and execute a safe change in a large legacy codebase."

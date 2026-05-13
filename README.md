@@ -8,22 +8,59 @@ It helps an agent identify change points, find test points, choose seams, write 
 
 ## Install
 
-Install for Codex:
-
-```bash
-npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a codex
-```
-
-Install globally for Codex without prompts:
-
-```bash
-npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a codex -g -y
-```
-
 List the skill without installing:
 
 ```bash
 npx skills add peizh/refactor-legacy-code --list
+```
+
+Install and let the CLI pick the detected agent:
+
+```bash
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code
+```
+
+Install globally for the detected agent without prompts:
+
+```bash
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -g -y
+```
+
+Install for a specific agent:
+
+```bash
+# Codex
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a codex
+
+# Claude Code
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a claude-code
+
+# Cursor
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a cursor
+
+# Windsurf
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a windsurf
+
+# GitHub Copilot
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a github-copilot
+
+# Gemini CLI
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a gemini-cli
+
+# OpenCode
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a opencode
+```
+
+Install for multiple agents:
+
+```bash
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code -a codex -a claude-code -a cursor
+```
+
+Install for all supported agents detected by the CLI:
+
+```bash
+npx skills add peizh/refactor-legacy-code --skill refactor-legacy-code --agent '*'
 ```
 
 ## Use
